@@ -1,0 +1,50 @@
+# ===========================
+# Terraform files
+# ===========================
+
+# Local state files — NEVER commit these (contains sensitive data)
+*.tfstate
+*.tfstate.backup
+
+# Terraform working directory
+.terraform/
+
+# Lock file (optional — some teams commit this)
+.terraform.lock.hcl
+
+# Crash logs
+crash.log
+crash.*.log
+
+# Variable files — may contain secrets
+*.tfvars
+*.tfvars.json
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Plan output files
+*.tfplan
+
+# ===========================
+# AWS credentials — CRITICAL
+# ===========================
+
+# Never commit AWS keys
+.env
+.env.*
+*.pem
+*.key
+dynamodb-policy.json
+terraform-full-policy.json
+tf-s3-policy.json
+
+# ===========================
+# OS files
+# ===========================
+
+.DS_Store        # Mac
+Thumbs.db        # Windows
